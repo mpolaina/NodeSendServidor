@@ -12,7 +12,7 @@ console.log('Comenzando NodeSend')
 
 // Habilitar CORS
 const opcionesCors = {
-    origin: 'https://cliente-pi.vercel.app'
+    origin: process.env.FRONTEND_URL
 }
 app.use( cors(opcionesCors) )
 // Puerto de la app
